@@ -32,6 +32,7 @@ Where the `battery_level` variable will contain your current battery level. And 
 If the battery is charging and the level is equal or above 95%, the alert is triggered. Or if it is discharging and the level is equal or below 10%, another alert is triggered.
 > NOTE: Check your system to see if the BAT directory is *BAT0* or *BAT1*.
 
+Required installation of `javac` to run .jar programs. <br>
 If you also want the audible alert, install the *mpg123* program. Otherwise, add \# in front of the lines of code where this program is called.
 
 ## Necessary modifications

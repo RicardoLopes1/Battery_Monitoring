@@ -38,14 +38,18 @@ If you also want the audible alert, install the *mpg123* program. Otherwise, add
 ## Necessary modifications
 Some changes will be necessary, such as: <br>
 - Modify the paths
-  - For example `/home/rlopes/.battery_warning/` this path is on my laptop. 
+  - For example `/home/rlopes/.battery_warning/` this path is on my laptop.
+
 ``` shell
 mpg123 /home/rlopes/.battery_warning/sound/low_sound.mp3
 java -jar /home/rlopes/.battery_warning/jar/batt_low.jar 
 ```  
 
+- modify the files `java/fullbat.java` (in lines 36 and 47) and `java/lowbat.java` (in lines 41 and 53) to be able to view the images in the notice. Recompile and create new files `jar/batt_full.jar` and `jar/batt_low.jar` and replace them.
+
+
 - Modify the sleep (optional)
-``` shell
+``` bash
 sleep 600 # 600 seconds or 10 minutes
 ```
 ## Final considerations

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo Building projects. Please, wait...
+
 touch Manifest.txt;
 echo Main-Class: fullbat >> Manifest.txt;
 javac *.java # "COMPILING JAVA FILES";
@@ -19,4 +21,5 @@ rm *.class # "REMOVING FILES .class"
 # java -jar batt_full.jar # running
 # java -jar batt_low.jar # running
 
+echo done.
 	
